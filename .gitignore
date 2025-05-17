@@ -1,5 +1,6 @@
 #  Local .terraform directories
 .terraform/
+.terraform.lock.hcl
 
 # .tfstate files
 *.tfstate
@@ -8,13 +9,14 @@
 # .tfvars files
 *.tfvars
 
-# ignore this file
-!tfmodule-template.tf
-
 # tardigrade-ci
-tardigrade-ci/
 .tardigrade-ci
+tardigrade-ci/
 
-# eclint
+# python cache
+__pycache__
+.python-version
+.pytest_cache
 
-.git/
+#macOS local dir meta file
+.DS_Store
